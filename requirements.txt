@@ -1,0 +1,11 @@
+pytz==2016.7
+python-dateutil==2.5.3
+mixbox==1.0.0
+tornado==4.3
+stix==1.1.1.6.dev1
+stix-ramrod==1.1.0
+libtaxii==1.1.109
+cybox==2.1.0.12
+xmltodict==0.10.2
+py2neo==3.1.1
+cabby==0.1.12
