@@ -1,0 +1,9 @@
+services:
+    - name           : hailataxii.com
+      username       : guest
+      password       : guest
+      discovery_url  : http://hailataxii.com/taxii-discovery-service
+      client_type     : edge
+      feeds          :
+        - system.Default
+
