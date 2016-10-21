@@ -50,7 +50,13 @@ def main_function():
     config = Config()
 
     loaded_configuration_file = get_yaml_config("config.yaml")
+    config.neo4j_host = loaded_configuration_file.get('neo4j_host', None)
+    config.neo4j_port = loaded_configuration_file.get('neo4j_port', None)
+    config.neo4j_password = loaded_configuration_file.get('neo4j_password', None)
+    config.neo4j_username = loaded_configuration_file.get('neo4j_username', None)
 
+    LOGGER.error("Neo4j user: %s", config.neo4j_username)
+    LOGGER.error("Neo4j password: %s", config.neo4j_password)
     for service in loaded_configuration_file.get('services', []):
         service_object = Service()
         service_object.name = service.get('name')

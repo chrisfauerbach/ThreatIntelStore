@@ -18,6 +18,10 @@ class Config():
        self.start_time = None
        self.end_time = None
        self.service = None
+       self.neo4j_host = None
+       self.neo4j_port = None
+       self.neo4j_username = None
+       self.neo4j_password = None
 
     def set_service(self, service_name):
         """

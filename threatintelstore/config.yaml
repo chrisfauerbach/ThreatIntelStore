@@ -7,3 +7,8 @@ services:
       feeds          :
         - system.Default
 
+
+neo4j_username: neo4j
+neo4j_password: neo4j
+neo4j_host: 192.168.99.100
+neo4j_port: 7474
